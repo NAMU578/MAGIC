@@ -1,8 +1,8 @@
 # MAGIC
 
-> Braille Wearable Project
+![logo](images/logo.png)
 
-경북과학고등학교 점자 웨어러블 프로젝트 공식 홈페이지입니다.
+> Braille Wearable Project
 
 ---
 
