@@ -199,8 +199,10 @@ body {
 .gdoc-open:hover { text-decoration: underline; }
 .gdoc-frame-wrap { position: relative; width: 100%; background: #fff; }
 .gdoc-frame {
-  width: 100%; height: 1100px; border: 0; display: block;
+  width: 100%; height: 85vh; min-height: 800px; border: 0; display: block;
 }
+/* 보고서 페이지는 문서가 잘 보이도록 본문 폭을 넓힌다 */
+.report-wide .gdoc-card { margin-left: calc(50% - 47vw); margin-right: calc(50% - 47vw); max-width: 94vw; }
 .gdoc-empty {
   margin: 24px 0; padding: 28px 24px; border: 2px dashed var(--line);
   border-radius: var(--radius); background: var(--bg-soft); text-align: center;
@@ -221,5 +223,6 @@ body {
 .doc-item-date { font-size: 13px; color: var(--muted); }
 
 @media (max-width: 760px) {
-  .gdoc-frame { height: 720px; }
+  .gdoc-frame { height: 78vh; min-height: 560px; }
+  .report-wide .gdoc-card { margin-left: 0; margin-right: 0; max-width: 100%; }
 }

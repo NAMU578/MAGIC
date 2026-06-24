@@ -1,5 +1,6 @@
 ---
 title: 보고서
+body_class: report-wide
 gdoc_url: ""
 ---
 
