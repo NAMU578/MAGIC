@@ -1,43 +1,31 @@
 # MAGIC
 
-![logo](images/logo.png)
-
-> Braille Wearable Project
+Braille Wearable Project
 
 ---
 
 ## 📖 프로젝트
 
-- [프로젝트 소개](introduction)
-
----
+- [소개](introduction)
+- [연혁](timeline)
 
 ## 🔧 설계
 
-- [하드웨어 설계](hardware)
-- [회로 설계](circuit)
-
----
+- [하드웨어](hardware)
+- [회로](circuit)
 
 ## 🧪 연구
 
-- [실험 결과](experiment)
-- [개발 일지](diary)
-- [회의록](meeting)
-- [아이디어 노트](ideas)
-
----
-
-## 👥 팀
-
-- [팀원 소개](members)
-- [기여 기록](contributors)
-
----
+- [실험](experiments)
+- [회의록](meetings)
+- [아이디어](ideas)
 
 ## 📚 자료
 
 - [참고문헌](references)
-- [변경 기록](changelog)
+- [자료실](downloads)
 
----
+## 👥 팀
+
+- [구성원](members)
+- [기여 기록](contributors)
