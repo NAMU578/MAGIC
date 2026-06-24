@@ -1,6 +1,6 @@
 ---
 title: 보고서
-gdoc_url: ""
+gdoc_url: "https://docs.google.com/document/d/e/2PACX-1vQF4T5hRwkN8v1iGCp6tMee_F2sqfe0XCtNES-4ysPiTsWBwB2Z9WQV0CyRwRuCb5h9xIumvtZyZbRj/pub"
 ---
 
 팀이 구글독스로 작성하는 **제안서·최종보고서**를 이곳에 연동합니다. 구글독스에서 문서를 수정하면 이 페이지에도 자동으로 반영됩니다.
