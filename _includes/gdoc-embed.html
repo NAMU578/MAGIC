@@ -1,10 +1,18 @@
 {% comment %}
 구글독스 임베드 컴포넌트
-사용법: {% include gdoc-embed.html url="게시된_구글독스_주소" title="문서 제목" %}
+사용법: {% include gdoc-embed.html url="게시된_구글독스_주소" title="문서 제목" tab="t.0" %}
 - url 뒤에 ?embedded=true 를 자동으로 붙여 상단의 "구글 문서로 로드됨" 안내 띠를 제거합니다.
+- tab(선택): 여러 탭이 있는 문서에서 특정 탭만 보여주고 싶을 때 탭 ID(예: t.0)를 넣습니다.
 {% endcomment %}
 {% if include.url and include.url != "" %}
   {% assign _u = include.url %}
+  {% if include.tab and include.tab != "" %}
+    {% if _u contains "?" %}
+      {% assign _u = _u | append: "&tab=" | append: include.tab %}
+    {% else %}
+      {% assign _u = _u | append: "?tab=" | append: include.tab %}
+    {% endif %}
+  {% endif %}
   {% if _u contains "?" %}
     {% assign _src = _u | append: "&embedded=true" %}
   {% else %}

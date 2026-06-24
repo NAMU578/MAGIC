@@ -2,11 +2,15 @@
 title: 보고서
 body_class: report-wide
 gdoc_url: "https://docs.google.com/document/d/e/2PACX-1vQF4T5hRwkN8v1iGCp6tMee_F2sqfe0XCtNES-4ysPiTsWBwB2Z9WQV0CyRwRuCb5h9xIumvtZyZbRj/pub"
+# 보고서 문서에 탭이 여러 개일 때, 보여줄 탭 1개의 id 를 넣습니다.
+# (구글 독스에서 그 탭을 클릭하면 주소창 끝에 tab=t.XXXX 가 보입니다)
+# 비워두면 문서 전체(모든 탭)가 그대로 표시됩니다.
+gdoc_tab: "t.0"
 ---
 
 팀이 구글독스로 작성하는 **제안서·최종보고서**를 이곳에 연동합니다. 구글독스에서 문서를 수정하면 이 페이지에도 자동으로 반영됩니다.
 
-{% include gdoc-embed.html url=page.gdoc_url title="MAGIC 최종보고서" %}
+{% include gdoc-embed.html url=page.gdoc_url title="MAGIC 최종보고서" tab=page.gdoc_tab %}
 
 ## 최종보고서 구성 (KOSOMBE 양식)
 
