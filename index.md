@@ -1,6 +1,10 @@
 # MAGIC
 
-Braille Wearable Project
+![logo](images/logo.png)
+
+> Braille Wearable Project
+
+경북과학고등학교 점자 웨어러블 프로젝트 공식 홈페이지입니다.
 
 ---
 
@@ -9,10 +13,14 @@ Braille Wearable Project
 - [소개](introduction)
 - [연혁](timeline)
 
+---
+
 ## 🔧 설계
 
 - [하드웨어](hardware)
 - [회로](circuit)
+
+---
 
 ## 🧪 연구
 
@@ -20,12 +28,22 @@ Braille Wearable Project
 - [회의록](meetings)
 - [아이디어](ideas)
 
+---
+
 ## 📚 자료
 
 - [참고문헌](references)
 - [자료실](downloads)
 
+---
+
 ## 👥 팀
 
 - [구성원](members)
 - [기여 기록](contributors)
+
+---
+
+## 🔗 Repository
+
+[GitHub Repository](https://github.com/NAMU578/MAGIC)
