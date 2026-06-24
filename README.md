@@ -20,14 +20,12 @@
 index.md              홈 화면
 introduction.md       프로젝트 소개
 hardware/             하드웨어 설계 (회로·PCB·3D·펌웨어)
+report.md             보고서 (구글독스 연동)
+meetings.md           회의록 (구글독스 연동)
 timeline.md           연구 일정
 members.md            팀 소개
 downloads.md          자료실
-experiments/          실험 기록
-meetings/             회의록
-ideas/                아이디어
-references/           참고문헌
-templates/            문서 양식
+CONTRIBUTING.md       홈페이지 수정 방법
 assets/               디자인(CSS)·이미지·파일  ← 수정 주의
-_layouts/             페이지 틀  ← 수정 주의
+_layouts/, _includes/ 페이지 틀  ← 수정 주의
 ```

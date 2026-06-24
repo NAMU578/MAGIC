@@ -1,0 +1,21 @@
+{% comment %}
+구글독스 임베드 컴포넌트
+사용법: {% include gdoc-embed.html url="게시된_구글독스_주소" title="문서 제목" %}
+{% endcomment %}
+{% if include.url and include.url != "" %}
+<div class="gdoc-card">
+  <div class="gdoc-bar">
+    <span class="gdoc-label">📄 {{ include.title | default: "구글 문서" }}</span>
+    <a class="gdoc-open" href="{{ include.url }}" target="_blank" rel="noopener">새 창에서 열기 ↗</a>
+  </div>
+  <div class="gdoc-frame-wrap">
+    <iframe class="gdoc-frame" src="{{ include.url }}" loading="lazy"
+            title="{{ include.title | default: '구글 문서' }}"></iframe>
+  </div>
+</div>
+{% else %}
+<div class="gdoc-empty">
+  <p>📄 아직 연결된 구글 문서가 없습니다.</p>
+  <p class="muted">구글독스에서 <strong>파일 → 공유 → 웹에 게시</strong> 후 나온 링크를 이 페이지 파일 맨 위의 <code>gdoc_url:</code> 에 붙여넣으면 문서가 여기에 표시됩니다. (<a href="{{ '/CONTRIBUTING' | relative_url }}">자세한 방법</a>)</p>
+</div>
+{% endif %}

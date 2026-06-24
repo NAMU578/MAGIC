@@ -19,6 +19,16 @@ title: 홈
     <h3>하드웨어 설계</h3>
     <p>센서 회로, PCB, 3D 하우징 설계 패키지</p>
   </a>
+  <a class="card" href="report">
+    <div class="card-icon">📝</div>
+    <h3>보고서</h3>
+    <p>구글독스 제안서·최종보고서 연동</p>
+  </a>
+  <a class="card" href="meetings">
+    <div class="card-icon">📋</div>
+    <h3>회의록</h3>
+    <p>팀 회의 기록 모음</p>
+  </a>
   <a class="card" href="timeline">
     <div class="card-icon">📅</div>
     <h3>연구 일정</h3>
