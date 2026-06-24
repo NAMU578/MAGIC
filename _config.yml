@@ -1,3 +1,47 @@
-theme: minima
-title: MAGIC
-description: Braille Wearable Project
+title: "MAGIC"
+subtitle: "점자 인식 웨어러블 연구 프로젝트"
+# 프로젝트 사이트는 /MAGIC/ 하위 경로에서 서비스됩니다
+baseurl: "/MAGIC"
+url: "https://namu578.github.io"
+description: "경북과학고등학교 의공학마법사(MAGIC) 팀 — 손끝에서 귀로: 점자 인식 웨어러블 기기 연구 홈페이지"
+lang: ko
+
+# GitHub Pages 빌드 설정
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+# 커스텀 레이아웃 사용 (테마 미지정)
+plugins:
+  - jekyll-relative-links
+
+# 모든 .md 페이지에 기본 레이아웃 자동 적용
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+# 네비게이션 메뉴 (팀원이 항목 추가/수정 가능)
+nav:
+  - title: "홈"
+    url: "/"
+  - title: "프로젝트 소개"
+    url: "/introduction"
+  - title: "하드웨어 설계"
+    url: "/hardware"
+  - title: "연구 일정"
+    url: "/timeline"
+  - title: "팀 소개"
+    url: "/members"
+  - title: "자료실"
+    url: "/downloads"
+
+# 빌드 제외
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

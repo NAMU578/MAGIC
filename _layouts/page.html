@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <span class="brand-mark">MAGIC</span>
+        <span class="brand-sub">의공학마법사</span>
+      </a>
+      <button class="nav-toggle" aria-label="메뉴 열기" onclick="document.body.classList.toggle('nav-open')">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav">
+        {% for item in site.nav %}
+          <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active"{% endif %}>{{ item.title }}</a>
+        {% endfor %}
+        <a class="nav-repo" href="https://github.com/NAMU578/MAGIC" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  {% if page.url == "/" %}
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">경북과학고등학교 · 의공학마법사 팀</p>
+      <h1 class="hero-title">손끝에서 귀로</h1>
+      <p class="hero-desc">광섬유·압력 센서로 점자를 인식하고, AI가 글자로 해석하는<br>손가락 착용형 웨어러블 기기 연구 프로젝트</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="{{ '/introduction' | relative_url }}">프로젝트 소개</a>
+        <a class="btn btn-ghost" href="{{ '/hardware' | relative_url }}">하드웨어 설계 보기</a>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <main class="site-main">
+    <article class="content">
+      {% if page.url != "/" and page.title %}
+      <h1 class="page-title">{{ page.title }}</h1>
+      {% endif %}
+      {{ content }}
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>MAGIC</strong> · 의공학마법사<br>
+        <span class="muted">경북과학고등학교 점자 인식 웨어러블 연구 프로젝트</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/NAMU578/MAGIC" target="_blank" rel="noopener">GitHub 저장소</a>
+        <a href="{{ '/CONTRIBUTING' | relative_url }}">홈페이지 수정 방법</a>
+      </div>
+    </div>
+    <p class="footer-copy muted">이 사이트는 GitHub Pages로 운영되며, 저장소의 Markdown 파일을 수정하면 자동으로 갱신됩니다.</p>
+  </footer>
+  <div class="nav-overlay" onclick="document.body.classList.remove('nav-open')"></div>
+</body>
+</html>
